@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Khan Tutorials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: vertical;
+        }
+
+        textarea {
+            height: 150px;
+        }
+
+        input[type="submit"] {
+            background-color: #00ABE4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0092c6;
+        }
+
+        .review {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+        }
+
+        .review .name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .review .stars {
+            color: #ffd700; /* Yellow color for stars */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Leave a Review</h1>
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="review">Review:</label><br>
+            <textarea id="review" name="review" required></textarea><br>
+            <label for="stars">Stars:</label><br>
+            <select id="stars" name="stars" required>
+                <option value="1">1 star</option>
+                <option value="2">2 stars</option>
+                <option value="3">3 stars</option>
+                <option value="4">4 stars</option>
+                <option value="5">5 stars</option>
+            </select><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>Customer Reviews</h2>
+        <div id="reviews">
+            <!-- Reviews will be displayed here -->
+            <div class="review">
+                <p class="name">Abdullah Saleem</p>
+                <p class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <p>He is a truly amazing teacher and you would be lucky to have him.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
